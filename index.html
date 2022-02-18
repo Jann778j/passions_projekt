@@ -16,10 +16,8 @@
   <body>
     <template>
       <article class="card">
-        <img src="" alt="" />
-        <div class="card_background">
-          <h4 class="name"></h4>
-        </div>
+        <img class="card_img" src="" alt="" />
+        <h4 class="name"></h4>
       </article>
     </template>
     <header></header>
@@ -54,10 +52,29 @@
           </div>
         </article>
       </section> -->
-      <section id="content" class="grid_layout"></section>
+      <section id="content" class="grid_layout">
+        <div id="main_content"></div>
+      </section>
       <section id="contact_us" class="grid_layout"></section>
     </main>
-    <footer></footer>
+    <footer>
+      <br />
+      <div id="grid_container">
+        <div id="sociale_medier">
+          <h4>Find os på de sociale medier</h4>
+          <div class="ikoner">
+            <a href=""><img src="ikoner/ikon_2.png" alt="facebook ikon" /></a>
+            <a href=""><img src="ikoner/ikon_1.png" alt="twitter ikon" /></a>
+            <a href=""><img src="ikoner/ikon_3.png" alt="instagram ikon" /></a>
+          </div>
+        </div>
+        <div id="kontakt_info">
+          <h4>Kontaktinformation</h4>
+          <p>Tlf: +45 12 36 78 90</p>
+          <p>Email: email@address.com</p>
+        </div>
+      </div>
+    </footer>
     <script src="load-data.js"></script>
   </body>
 </html>
