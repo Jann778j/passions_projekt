@@ -6,15 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Cities</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <template>
+      <article class="card">
+        <img src="" alt="" />
+        <div class="card_background">
+          <h4 class="name"></h4>
+        </div>
+      </article>
+    </template>
     <header></header>
     <main>
-      <section id="splash" class="grid_layout"></section>
-      <section id="about_us" class="grid_layout"></section>
+      <section id="splash">
+        <video autoplay muted loop id="splash_video">
+          <source src="billeder/splash-video.mp4" type="video/mp4" />
+        </video>
+        <article>
+          <h1>Big Cities</h1>
+          <button class="button_border">Udforsk byer</button>
+        </article>
+      </section>
+      <!-- <section id="about_us" class="grid_layout">
+        <article>
+          <img src="billeder/logo.png" alt="logo" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              ex sed deserunt ea labore, at soluta odit maxime vitae et quod
+              voluptas accusantium hic ipsam esse, voluptate quas obcaecati
+              molestias culpa quos doloribus id. Quis sit corrupti possimus
+              eaque? Repellat eveniet quis sit blanditiis, sequi impedit est ad
+              harum earum cum deserunt debitis reiciendis assumenda inventore,
+              minus asperiores ullam labore perspiciatis. Quasi in, facilis sit
+              delectus amet, incidunt obcaecati id vitae eaque veniam maiores
+              dolore autem repudiandae, culpa labore officiis perferendis
+              dolorem qui libero asperiores perspiciatis voluptates. Omnis, sed?
+              Distinctio, voluptatem? Voluptatibus deserunt ab, hic at quae
+              possimus odit autem.
+            </p>
+          </div>
+        </article>
+      </section> -->
       <section id="content" class="grid_layout"></section>
       <section id="contact_us" class="grid_layout"></section>
     </main>
     <footer></footer>
+    <script src="load-data.js"></script>
   </body>
 </html>
