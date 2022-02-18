@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  background-size: cover;
+}
+
+/* burgermenu */
+.toggle-btn {
+  display: none;
+  color: #333333;
+}
+/* definere navn i højre hjørne */
+.navn {
+  /* display: flex;
+  justify-content: end; */
+  float: right;
+
+  max-width: 45px;
+}
+/* .city {
+  float: none;
+  color: rgb(75, 68, 60);
+  font-size: 2rem;
+  margin-right: 1rem;
+  font-family: cormorant-garamond, serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.toggle-btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* denne regel sætter layoutet for header hvor jeg bla. har navigation */
+header nav ul {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+header ul li {
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #8691a6;
+  opacity: 80%;
+}
+
+.nav ul {
+  gap: 10px;
+  list-style: none;
+  padding: 0.5rem;
+
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* regel slut */
+
+/* burger menu  */
+@media (max-width: 1980px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
+/* burger menu slut */
