@@ -10,7 +10,9 @@ let filter = "alle";
 
 document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll("div button");
-  filterButtons.forEach((button) => button.addEventListener("click", filterMenu));
+  filterButtons.forEach((button) =>
+    button.addEventListener("click", filterMenu)
+  );
   fetchData();
 });
 
