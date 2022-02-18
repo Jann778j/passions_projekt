@@ -101,6 +101,24 @@ button.button_border:hover {
   box-shadow: 0;
 }
 
+div button {
+  background-color: transparent;
+  border: none;
+  color: var(--p-color);
+  box-shadow: inset 0px 0px 0px 1px var(--p-color);
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+div button.selected {
+  background-color: var(--p-color);
+  color: var(--h4-color);
+}
+
 /* #endregion buttons */
 
 /* #region splash */
