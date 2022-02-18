@@ -12,7 +12,7 @@ async function getData() {
   show(json);
 }
 
-const section = document.getElementById("content");
+const mainContent = document.getElementById("main_content");
 const template = document.querySelector("template").content;
 
 function show(json) {
@@ -21,7 +21,7 @@ function show(json) {
     const clone = template.cloneNode(true);
     clone.querySelector("img").src = `billeder/${city.billede}`;
     clone.querySelector(".name").textContent = `${city.by}`;
-    section.appendChild(clone);
+    mainContent.appendChild(clone);
   });
 }
 
