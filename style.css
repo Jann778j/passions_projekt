@@ -1,0 +1,41 @@
+/* #region global*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  background-size: cover;
+}
+
+.grid_layout {
+  /*responsivt grid layout med whitespace ude til siderne, når browseren er større end 1200px*/
+  display: grid;
+  grid-template-columns: 8px auto minmax(0, 1200px) auto 8px;
+}
+
+/* #endregion global*/
+
+/* #region splash */
+
+section#splash {
+  height: 100vh;
+  background-image: url("billeder/toronto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+/* #endregion splash */
+
+/* #region about_us*/
+/* #endregion about_us*/
+
+/* #region content*/
+/* #endregion content*/
+
+/* #region contact_us*/
+/* #endregion contact_us*/
