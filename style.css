@@ -179,7 +179,8 @@ article h4 {
   transition: padding 0.5s, height 0.5s;
 }
 
-article h4:hover {
+article h4:hover,
+.card:hover h4.name {
   padding: 60% 0.5rem;
   height: 100%;
 }
