@@ -253,7 +253,7 @@ section#splash {
 
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  background-color: #d99a9a;
+  background-color: #f2d8ce;
   overflow: hidden;
 }
 
@@ -281,7 +281,7 @@ section#splash article {
 
 /* #region about_us*/
 #about_us {
-  background-color: #d99a9a;
+  background-color: #f2d8ce;
 }
 
 #about_us img {
@@ -305,7 +305,8 @@ section#splash article {
 /* #region content*/
 
 #content {
-  margin-block: 120px;
+  padding-block: 120px;
+  background-color: #f1eeeb;
 }
 
 #main_content {
