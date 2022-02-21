@@ -246,6 +246,23 @@ section#splash article {
 /* #endregion splash */
 
 /* #region about_us*/
+#about_us {
+  background-color: #d99a9a;
+}
+
+#about_us article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  gap: 20px;
+  margin-top: 0;
+  margin-bottom: 180px;
+}
+
+#about_us article div {
+  margin-top: 6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 
 /* #endregion about_us*/
 
