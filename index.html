@@ -22,9 +22,7 @@
     </template>
     <header>
       <!-- <a class="city" href="index.html">Big City</a> -->
-      <a class="navn" href="index.html">
-        <img src="billeder/logo.png" alt=""
-      /></a>
+      <a class="navn" href="index.html"> <img src="billeder/logo.png" alt="" /></a>
       <p>Big Cities</p>
       <button class="toggle-btn">☰</button>
       <nav class="nav">
@@ -41,7 +39,7 @@
         </video>
         <article>
           <h1>Big Cities</h1>
-          <button class="button_border">Udforsk byer</button>
+          <button class="button_border" onclick="window.location.href='#content'">Udforsk byer</button>
         </article>
       </section>
       <section id="about_us" class="grid_layout">
@@ -52,23 +50,19 @@
             <h2>Hvem er vi?</h2>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              ex sed deserunt ea labore, at soluta odit maxime vitae et quod
-              voluptas accusantium hic ipsam esse, voluptate quas obcaecati
-              molestias culpa quos doloribus id. Quis sit corrupti possimus
-              eaque? Repellat eveniet quis sit blanditiis, sequi impedit est ad
-              harum earum cum deserunt debitis reiciendis assumenda inventore,
-              minus asperiores ullam labore perspiciatis. Quasi in, facilis sit
-              delectus amet, incidunt obcaecati id vitae eaque veniam maiores
-              dolore autem repudiandae, culpa labore officiis perferendis
-              dolorem qui libero asperiores perspiciatis voluptates. Omnis, sed?
-              Distinctio, voluptatem? Voluptatibus deserunt ab, hic at quae
-              possimus odit autem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex sed deserunt ea labore, at soluta odit
+              maxime vitae et quod voluptas accusantium hic ipsam esse, voluptate quas obcaecati molestias culpa quos
+              doloribus id. Quis sit corrupti possimus eaque? Repellat eveniet quis sit blanditiis, sequi impedit est ad
+              harum earum cum deserunt debitis reiciendis assumenda inventore, minus asperiores ullam labore
+              perspiciatis. Quasi in, facilis sit delectus amet, incidunt obcaecati id vitae eaque veniam maiores dolore
+              autem repudiandae, culpa labore officiis perferendis dolorem qui libero asperiores perspiciatis
+              voluptates. Omnis, sed? Distinctio, voluptatem? Voluptatibus deserunt ab, hic at quae possimus odit autem.
             </p>
           </div>
         </article>
       </section>
       <section id="content" class="grid_layout">
+        <h2>Se byer rundt på kloden</h2>
         <div id="filter_menu">
           <h3>Filter:</h3>
           <div id="filter">
@@ -102,6 +96,17 @@
         </div>
       </div>
     </footer>
+    <section id="popup">
+      <article>
+        <div id="close">&#x2715;</div>
+        <h2 class="by">asd</h2>
+        <img class="pop_up_img" src="billeder/amsterdam.webp" alt="" />
+        <h3 class="land">asd</h3>
+        <p class="beskrivelse">asd</p>
+        <p class="sprog">asd</p>
+        <p class="befolkning">asd</p>
+      </article>
+    </section>
     <script src="burgermenu.js"></script>
     <script src="load-data.js"></script>
   </body>
