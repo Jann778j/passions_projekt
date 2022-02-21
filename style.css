@@ -14,6 +14,10 @@ img {
 body {
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
 
 .grid_layout {
   /*responsivt grid layout med whitespace ude til siderne, når browseren er større end 1200px*/
@@ -228,6 +232,8 @@ nav.shown {
   color: var(--h4-color);
   font-weight: normal;
 }
+.nav_links:hover {
+}
 
 /* regel slut */
 
@@ -279,13 +285,14 @@ section#splash article {
   grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
   gap: 20px;
   margin-top: 0;
-  margin-bottom: 180px;
+  margin-bottom: 120px;
 }
 
 #about_us article div {
   margin-top: 3rem;
   margin-left: 3rem;
   margin-right: 3rem;
+  gap: 4rem;
 }
 
 /* #endregion about_us*/
