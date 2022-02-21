@@ -245,6 +245,7 @@ section#splash {
 
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+  background-color: #d99a9a;
 }
 
 #splash_video {
@@ -282,7 +283,7 @@ section#splash article {
 }
 
 #about_us article div {
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
