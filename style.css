@@ -396,7 +396,7 @@ article.card:hover h4.name {
 /*-section navn-*/
 #kontakt_os {
   background-color: #8ab0bf;
-  height: 600px;
+  height:800px;
   display: grid;
   place-content: center;
 }
@@ -460,7 +460,7 @@ input {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  /*placere formular på midten af siden*/
+  /*placerer formular på midten af siden*/
   #grid_k3 {
     display: grid;
     width: 400px;
