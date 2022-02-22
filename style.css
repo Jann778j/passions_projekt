@@ -86,6 +86,11 @@ button {
   color: var(--p-color);
   font-weight: normal;
 }
+
+p {
+  line-height: 2;
+}
+
 /* #endregion fonts */
 
 /* #region buttons */
@@ -122,6 +127,10 @@ button.button_border:hover {
   cursor: pointer;
 }
 
+#filter button:hover {
+  background-color: rgba(0, 0, 0, 0.333);
+}
+
 #filter button.selected {
   background-color: var(--p-color);
   color: var(--h4-color);
@@ -156,7 +165,7 @@ button.button_border:hover {
 
 .navn img {
   height: 100%;
-  padding-block: 2px;
+  padding-block: 4px;
 }
 
 /* .city {
@@ -206,7 +215,7 @@ header {
   display: none;
   position: absolute;
   width: 100%;
-  top: 48.5px;
+  top: 45px;
 }
 
 nav.shown {
@@ -284,10 +293,6 @@ section#splash article {
   z-index: 1;
 }
 
-#logo_text {
-  height: clamp(3.5rem, 2.25rem + 5vw, 6rem);
-}
-
 /* #endregion splash */
 
 /* #region about_us*/
@@ -341,6 +346,11 @@ article.card img {
   background-size: cover;
 }
 
+article.card:nth-child(5) img.card_img {
+  /* selectoren tager fat i billedet på det femte kort */
+  object-position: 100% 50%;
+}
+
 article.card > * {
   grid-area: 1/1;
 }
@@ -368,6 +378,7 @@ article.card:hover h4.name {
 
 #filter_menu h3 {
   margin-right: 48px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 650px) {
@@ -427,6 +438,7 @@ article.card:hover h4.name {
 }
 input {
   height: 50px;
+  padding: 12px;
   font-size: 1rem;
   font-family: "Noto Serif", serif;
 }
@@ -435,6 +447,12 @@ input {
   background-color: #d99b96;
   color: white;
   width: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+#send_knap:hover {
+  background-color: hsl(4, 47%, 67%);
 }
 /*-----------web----------*/
 @media (min-width: 600px) {
@@ -488,7 +506,7 @@ footer #grid_container {
 .ikoner {
   display: flex;
   place-content: center;
-  gap: 10px;
+  gap: 16px;
 }
 #kontakt_info {
   grid-column: 1;
@@ -537,8 +555,16 @@ footer #grid_container {
   width: 90vw;
   height: 90vh;
   max-width: 720px;
-  padding: 0 8px 8px 8px;
+  padding: 0 16px 16px 16px;
   margin: 4rem auto;
+}
+
+#popup article > p {
+  max-width: 550px;
+}
+
+#popup article h2 {
+  padding-bottom: 0.5rem;
 }
 
 #close {
