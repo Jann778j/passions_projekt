@@ -245,6 +245,7 @@ nav.shown {
   font-weight: normal;
 }
 .nav_links:hover {
+  color: #000;
 }
 
 /* regel slut */
@@ -438,7 +439,7 @@ input {
   font-family: "Noto Serif", serif;
 }
 /*-send knap-*/
-#send_knap {
+.send_knap {
   background-color: #d99b96;
   color: white;
   width: 80px;
@@ -518,6 +519,13 @@ footer #grid_container {
   }
 }
 
+#zoom {
+  transition: transform .2s; /* Animation */
+
+}
+#zoom:hover {
+  transform: scale(1.1); 
+}
 /* #endregion footer */
 
 /* #region pop up */

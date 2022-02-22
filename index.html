@@ -23,7 +23,7 @@
     </template>
     <header>
       <a class="navn" href="index.html">
-        <img src="billeder/logo_text.svg" alt=""
+        <img id="zoom" src="billeder/logo_text.svg" alt=""
       /></a>
       <!--<a class="city" href="index.html">Big City</a>-->
       <button class="toggle-btn">☰</button>
@@ -85,12 +85,12 @@
         <div id="filter_menu">
           <h3>Filter:</h3>
           <div id="filter">
-            <button data-category="alle" class="selected">Alle</button>
-            <button data-category="Europa" class="">Europa</button>
-            <button data-category="Nordamerika" class="">Nordamerika</button>
-            <button data-category="Sydamerika" class="">Sydamerika</button>
-            <button data-category="Asien" class="">Asien</button>
-            <button data-category="Afrika" class="">Afrika</button>
+            <button id="zoom" data-category="alle" class="selected">Alle</button>
+            <button id="zoom" data-category="Europa" class="">Europa</button>
+            <button id="zoom" data-category="Nordamerika" class="">Nordamerika</button>
+            <button id="zoom" data-category="Sydamerika" class="">Sydamerika</button>
+            <button id="zoom" data-category="Asien" class="">Asien</button>
+            <button id="zoom" data-category="Afrika" class="">Afrika</button>
           </div>
         </div>
         <div id="main_content"></div>
@@ -141,7 +141,7 @@
             </div>
 
             <!-- Formular-knap -->
-            <button id="send_knap" onclick="myFunction()">Send</button>
+            <button id="zoom" class="send_knap" onclick="myFunction()">Send</button>
           </form>
         </div>
       </section>
@@ -152,9 +152,9 @@
         <div id="sociale_medier">
           <h4>Find os på de sociale medier</h4>
           <div class="ikoner">
-            <a href=""><img src="ikoner/ikon_2.png" alt="facebook ikon" /></a>
-            <a href=""><img src="ikoner/ikon_1.png" alt="twitter ikon" /></a>
-            <a href=""><img src="ikoner/ikon_3.png" alt="instagram ikon" /></a>
+            <a id="zoom" href=""><img src="ikoner/ikon_2.png" alt="facebook ikon" /></a>
+            <a id="zoom" href=""><img src="ikoner/ikon_1.png" alt="twitter ikon" /></a>
+            <a id="zoom" href=""><img src="ikoner/ikon_3.png" alt="instagram ikon" /></a>
           </div>
         </div>
         <div id="kontakt_info">
