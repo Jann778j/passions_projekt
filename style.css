@@ -15,6 +15,8 @@ img {
 body {
   overflow-x: hidden;
 }
+
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
@@ -390,7 +392,7 @@ article.card:hover h4.name {
 
 /* #region contact_us*/
 
-/*---------section navn-----------*/
+/*-section navn-*/
 #kontakt_os {
   background-color: #8ab0bf;
   height: 600px;
@@ -398,15 +400,15 @@ article.card:hover h4.name {
   place-content: center;
 }
 
-/*-----------h2--------*/
+/*-h2-*/
 #kontakt_os h2 {
   text-align: center;
 }
-/*-------p---------*/
+/*-p-*/
 #kontakt_os p {
   line-height: 2;
 }
-/*----- h2 og p---------*/
+/*- h2 og p-*/
 #grid_k1 {
   margin: 10px;
 }
@@ -418,7 +420,7 @@ article.card:hover h4.name {
   gap: 20px;
   margin: 10px;
 }
-
+/* længden på input felter*/
 #full-name {
   width: 400px;
 }
@@ -430,13 +432,13 @@ input {
   font-size: 1rem;
   font-family: "Noto Serif", serif;
 }
-/*-------send knap-------*/
+/*-send knap-*/
 #send_knap {
   background-color: #d99b96;
   color: white;
   width: 80px;
 }
-/*-----------web----------*/
+/*-web-*/
 @media (min-width: 600px) {
   #grid_k1 {
     display: grid;
@@ -452,6 +454,7 @@ input {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+  /*placere formular på midten af siden*/
   #grid_k3 {
     display: grid;
     width: 400px;
@@ -469,7 +472,7 @@ footer {
 footer p {
   color: white;
   width: 100%;
-  /*height: 100px;*/
+  
 }
 footer h4 {
   font-size: 1.5rem;
@@ -485,7 +488,7 @@ footer #grid_container {
   grid-row: 2/3;
   line-height: 2;
 }
-.ikoner {
+.ikoner { 
   display: flex;
   place-content: center;
   gap: 10px;
