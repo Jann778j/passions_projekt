@@ -8,7 +8,8 @@
 
 img {
   max-width: 100%;
-  background-size: cover;
+  /* background-size: cover; */
+  object-fit: cover;
 }
 
 body {
@@ -94,11 +95,11 @@ button.button_border {
   border: none;
   color: var(--h4-color);
   box-shadow: inset 0px 0px 0px 1px var(--h4-color);
-  padding: 8px 24px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
@@ -401,11 +402,11 @@ article.card:hover h4.name {
 }
 
 /*grid/flex for formular*/
-#grid_k2{
-display: flex;
-flex-wrap: wrap;
-gap:20px;
-margin: 10px;
+#grid_k2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px;
 }
 
 #full-name {
@@ -424,7 +425,6 @@ input {
   background-color: #d99b96;
   color: white;
   width: 80px;
- 
 }
 /*-----------web----------*/
 @media (min-width: 600px) {
