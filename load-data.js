@@ -58,7 +58,7 @@ function showPopUp(city) {
   popUp.style.display = "block";
   popUp.querySelector(".by").textContent = `${city.by}`;
   popUp.querySelector(".pop_up_img").src = `billeder/${city.billede}`;
-  popUp.querySelector(".land").textContent = `Land: ${city.land}`;
+  popUp.querySelector(".land").textContent = ` ${city.land}`;
   popUp.querySelector(".beskrivelse").textContent = `${city.beskrivelse}`;
   popUp.querySelector(".sprog").textContent = `Sprog: ${city.sprog}`;
   popUp.querySelector(".befolkning").textContent = `${city.by} har en befolkning på ${city.befolkning} mennesker.`;
