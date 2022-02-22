@@ -65,3 +65,9 @@ function showPopUp(city) {
 }
 
 document.getElementById("close").addEventListener("click", () => (popUp.style.display = "none")); //lukke knap
+
+
+//myFunction - alert
+function myFunction() {
+  alert("Tak for din indsendelse");
+}
