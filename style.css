@@ -150,9 +150,15 @@ button.button_border:hover {
   justify-content: end; */
   float: right;
 
-  max-width: 45px;
+  height: 45px;
   margin-left: 16px;
 }
+
+.navn img {
+  height: 100%;
+  padding-block: 2px;
+}
+
 /* .city {
   float: none;
   color: rgb(75, 68, 60);
@@ -276,6 +282,10 @@ section#splash article {
   align-items: center;
   justify-content: space-around;
   z-index: 1;
+}
+
+#logo_text {
+  height: clamp(3.5rem, 2.25rem + 5vw, 6rem);
 }
 
 /* #endregion splash */
