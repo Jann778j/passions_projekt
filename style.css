@@ -16,7 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
@@ -313,6 +312,9 @@ section#splash article {
 #about_us article div {
   margin: auto;
 }
+#about_us p {
+  line-height: 1.7rem;
+}
 
 /* #endregion about_us*/
 
@@ -396,7 +398,7 @@ article.card:hover h4.name {
 /*-section navn-*/
 #kontakt_os {
   background-color: #8ab0bf;
-  height:800px;
+  height: 800px;
   display: grid;
   place-content: center;
 }
@@ -407,7 +409,7 @@ article.card:hover h4.name {
 }
 /*-p-*/
 #kontakt_os p {
-  line-height: 2;
+  line-height: 1.7;
 }
 /*- h2 og p-*/
 #grid_k1 {
@@ -428,9 +430,9 @@ article.card:hover h4.name {
 #email {
   width: 300px;
 }
-#inform_us{
- width: 400px;
- font-size: 1rem;
+#inform_us {
+  width: 400px;
+  font-size: 1rem;
   font-family: "Noto Serif", serif;
 }
 input {
@@ -478,7 +480,6 @@ footer {
 footer p {
   color: white;
   width: 100%;
-  
 }
 footer h4 {
   font-size: 1.5rem;
@@ -494,7 +495,7 @@ footer #grid_container {
   grid-row: 2/3;
   line-height: 2;
 }
-.ikoner { 
+.ikoner {
   display: flex;
   place-content: center;
   gap: 10px;
@@ -520,11 +521,10 @@ footer #grid_container {
 }
 
 #zoom {
-  transition: transform .2s; /* Animation */
-
+  transition: transform 0.2s; /* Animation */
 }
 #zoom:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 /* #endregion footer */
 
@@ -576,4 +576,3 @@ footer #grid_container {
 }
 
 /* #region pop up */
-
