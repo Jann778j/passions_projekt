@@ -16,7 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
@@ -88,6 +87,11 @@ button {
   color: var(--p-color);
   font-weight: normal;
 }
+
+p {
+  line-height: 2;
+}
+
 /* #endregion fonts */
 
 /* #region buttons */
@@ -124,6 +128,10 @@ button.button_border:hover {
   cursor: pointer;
 }
 
+#filter button:hover {
+  background-color: rgba(0, 0, 0, 0.333);
+}
+
 #filter button.selected {
   background-color: var(--p-color);
   color: var(--h4-color);
@@ -158,7 +166,7 @@ button.button_border:hover {
 
 .navn img {
   height: 100%;
-  padding-block: 2px;
+  padding-block: 4px;
 }
 
 /* .city {
@@ -287,10 +295,6 @@ section#splash article {
   z-index: 1;
 }
 
-#logo_text {
-  height: clamp(3.5rem, 2.25rem + 5vw, 6rem);
-}
-
 /* #endregion splash */
 
 /* #region about_us*/
@@ -312,6 +316,9 @@ section#splash article {
 
 #about_us article div {
   margin: auto;
+}
+#about_us p {
+  line-height: 1.7rem;
 }
 
 /* #endregion about_us*/
@@ -344,6 +351,11 @@ article.card img {
   background-size: cover;
 }
 
+article.card:nth-child(5) img.card_img {
+  /* selectoren tager fat i billedet på det femte kort */
+  object-position: 100% 50%;
+}
+
 article.card > * {
   grid-area: 1/1;
 }
@@ -371,6 +383,7 @@ article.card:hover h4.name {
 
 #filter_menu h3 {
   margin-right: 48px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 650px) {
@@ -396,7 +409,7 @@ article.card:hover h4.name {
 /*-section navn-*/
 #kontakt_os {
   background-color: #8ab0bf;
-  height:800px;
+  height: 800px;
   display: grid;
   place-content: center;
 }
@@ -407,7 +420,7 @@ article.card:hover h4.name {
 }
 /*-p-*/
 #kontakt_os p {
-  line-height: 2;
+  line-height: 1.7;
 }
 /*- h2 og p-*/
 #grid_k1 {
@@ -428,13 +441,14 @@ article.card:hover h4.name {
 #email {
   width: 300px;
 }
-#inform_us{
- width: 400px;
- font-size: 1rem;
+#inform_us {
+  width: 400px;
+  font-size: 1rem;
   font-family: "Noto Serif", serif;
 }
 input {
   height: 50px;
+  padding: 12px;
   font-size: 1rem;
   font-family: "Noto Serif", serif;
 }
@@ -443,6 +457,12 @@ input {
   background-color: #d99b96;
   color: white;
   width: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+#send_knap:hover {
+  background-color: hsl(4, 47%, 67%);
 }
 /*-web-*/
 @media (min-width: 600px) {
@@ -478,7 +498,6 @@ footer {
 footer p {
   color: white;
   width: 100%;
-  
 }
 footer h4 {
   font-size: 1.5rem;
@@ -494,10 +513,10 @@ footer #grid_container {
   grid-row: 2/3;
   line-height: 2;
 }
-.ikoner { 
+.ikoner {
   display: flex;
   place-content: center;
-  gap: 10px;
+  gap: 16px;
 }
 #kontakt_info {
   grid-column: 1;
@@ -520,11 +539,10 @@ footer #grid_container {
 }
 
 #zoom {
-  transition: transform .2s; /* Animation */
-
+  transition: transform 0.2s; /* Animation */
 }
 #zoom:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 /* #endregion footer */
 
@@ -553,9 +571,17 @@ footer #grid_container {
   width: 90vw;
   height: 90vh;
   max-width: 720px;
-  padding: 0 8px 8px 8px;
+  padding: 0 16px 16px 16px;
   margin: 4rem auto;
   
+}
+
+#popup article > p {
+  max-width: 550px;
+}
+
+#popup article h2 {
+  padding-bottom: 0.5rem;
 }
 
 #close {
