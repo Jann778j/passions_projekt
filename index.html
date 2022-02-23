@@ -23,7 +23,7 @@
     </template>
     <header>
       <a class="navn" href="index.html">
-        <img src="billeder/logo_text.svg" alt=""
+        <img id="zoom" src="billeder/logo_text.svg" alt=""
       /></a>
       <!--<a class="city" href="index.html">Big City</a>-->
       <button class="toggle-btn">☰</button>
@@ -33,7 +33,7 @@
           <li>
             <a class="nav_links" href="index.html#content">Udforsk byer</a>
           </li>
-          <li><a class="nav_links" href="index.html#contact_us">Kontakt</a></li>
+          <li><a class="nav_links" href="index.html#kontakt_os">Kontakt</a></li>
           <li>
             <a class="nav_links" href="index.html#footer"
               >Vores sociale medier</a
@@ -63,18 +63,13 @@
           <div>
             <h2>Hvem er vi?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              ex sed deserunt ea labore, at soluta odit maxime vitae et quod
-              voluptas accusantium hic ipsam esse, voluptate quas obcaecati
-              molestias culpa quos doloribus id. Quis sit corrupti possimus
-              eaque? Repellat eveniet quis sit blanditiis, sequi impedit est ad
-              harum earum cum deserunt debitis reiciendis assumenda inventore,
-              minus asperiores ullam labore perspiciatis. Quasi in, facilis sit
-              delectus amet, incidunt obcaecati id vitae eaque veniam maiores
-              dolore autem repudiandae, culpa labore officiis perferendis
-              dolorem qui libero asperiores perspiciatis voluptates. Omnis, sed?
-              Distinctio, voluptatem? Voluptatibus deserunt ab, hic at quae
-              possimus odit autem.
+              Siden her er skabt i ønsket om inspirere dig og andre til at
+              udforske de store smukke byer der udfolder sig rundt omkring i
+              verden. På siden finder du nogle udvalgte storbyer som vi har
+              samlet informationer om. Alle nogen vi finder inspirerende og som
+              bestemt er et besøg værd. Stille og roligt mens verdens langsomt
+              åbner op igen vil der med tiden komme flere spændene storbyer til.
+              Vi håber du vil være med på rejsen.
             </p>
           </div>
         </article>
@@ -84,12 +79,18 @@
         <div id="filter_menu">
           <h3>Filter:</h3>
           <div id="filter">
-            <button data-category="alle" class="selected">Alle</button>
-            <button data-category="Europa" class="">Europa</button>
-            <button data-category="Nordamerika" class="">Nordamerika</button>
-            <button data-category="Sydamerika" class="">Sydamerika</button>
-            <button data-category="Asien" class="">Asien</button>
-            <button data-category="Afrika" class="">Afrika</button>
+            <button id="zoom" data-category="alle" class="selected">
+              Alle
+            </button>
+            <button id="zoom" data-category="Europa" class="">Europa</button>
+            <button id="zoom" data-category="Nordamerika" class="">
+              Nordamerika
+            </button>
+            <button id="zoom" data-category="Sydamerika" class="">
+              Sydamerika
+            </button>
+            <button id="zoom" data-category="Asien" class="">Asien</button>
+            <button id="zoom" data-category="Afrika" class="">Afrika</button>
           </div>
         </div>
         <div id="main_content"></div>
@@ -101,10 +102,10 @@
           <h2>Lad os holde kontakten</h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            sollicitudin leo in elementum finibus. Pellentesque blandit massa et
-            libero ullamcorper molestie.Voluptatibus deserunt ab, hic at quae
-            possimus odit autem.
+            Tilmeld dig vores nyhedsbrev og hold dig opdateret før alle andre.
+            Vi tilføjer løbende en masse spændende information om storbyerne
+            samt nye storbyer til vores liste. Fortæl os gerne hvilke byer eller
+            hvilke informationer <i>du</i> godt kunne tænke dig at vide mere om.
           </p>
         </div>
 
@@ -122,6 +123,16 @@
                 required
               />
             </div>
+            <div class="form-felt">
+              <label>
+                <textarea
+                  placeholder="Fortæl os hvad du vil vide"
+                  name="besked"
+                  id="inform_us"
+                  rows="5"
+                ></textarea>
+              </label>
+            </div>
             <!-- Formular-indhold -->
             <div class="form-felt">
               <label for="email"></label>
@@ -133,8 +144,11 @@
                 required
               />
             </div>
+
             <!-- Formular-knap -->
-            <button id="send_knap" onclick="myFunction()">Send</button>
+            <button id="zoom" class="send_knap" onclick="myFunction()">
+              Send
+            </button>
           </form>
         </div>
       </section>
@@ -145,9 +159,15 @@
         <div id="sociale_medier">
           <h4>Find os på de sociale medier</h4>
           <div class="ikoner">
-            <a href=""><img src="ikoner/ikon_2.png" alt="facebook ikon" /></a>
-            <a href=""><img src="ikoner/ikon_1.png" alt="twitter ikon" /></a>
-            <a href=""><img src="ikoner/ikon_3.png" alt="instagram ikon" /></a>
+            <a id="zoom" href=""
+              ><img src="ikoner/ikon_2.png" alt="facebook ikon"
+            /></a>
+            <a id="zoom" href=""
+              ><img src="ikoner/ikon_1.png" alt="twitter ikon"
+            /></a>
+            <a id="zoom" href=""
+              ><img src="ikoner/ikon_3.png" alt="instagram ikon"
+            /></a>
           </div>
         </div>
         <div id="kontakt_info">
@@ -161,11 +181,18 @@
       <article>
         <div id="close">&#x2715;</div>
         <h2 class="by">asd</h2>
-        <img class="pop_up_img" src="billeder/amsterdam.webp" alt="" />
+        <img
+          class="pop_up_img"
+          src="billeder/amsterdam.webp"
+          alt="billeder af storbyer"
+        />
         <h3 class="land">asd</h3>
         <p class="beskrivelse">asd</p>
+        <br />
         <p class="sprog">asd</p>
+        <br />
         <p class="befolkning">asd</p>
+        <br />
       </article>
     </section>
     <script src="burgermenu.js"></script>
