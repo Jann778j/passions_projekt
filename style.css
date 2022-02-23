@@ -648,7 +648,7 @@ schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp ---*/
   opacity: 1;
 }
 /*fjerne opacity på tilbage til top knap*/
-@media (min-width: 800px) {
+@media (min-width: 1400px) {
   #myBtn{
     opacity: 1;
   }
