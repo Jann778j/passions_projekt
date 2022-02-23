@@ -11,7 +11,7 @@ let filter = "alle"; //variabel som ændrer sig alt efter hvilken filterknap du 
 document.addEventListener("DOMContentLoaded", () => {
   //venter indtil siden er loadet før knapperne bliver funktionelle
   const filterButtons = document.querySelectorAll("div button");
-  filterButtons.forEach((button) => button.addEventListener("click", filterMenu)); //knapperne kalder på filterMenu() funktionen, når man klikker
+  filterButtons.forEach((button) => button.addEventListener("click", filterContinent)); //knapperne kalder på filterContinent() funktionen, når man klikker
   fetchData(); //kalder på fetchData() funktionen
 });
 
@@ -23,17 +23,17 @@ async function fetchData() {
   //console.log(cities);
 }
 
-function filterMenu() {
+function filterContinent() {
   //bliver kaldt når knapperne klikkes på
   filter = this.dataset.category; //variablen ændres til den knap man klikker på
   document.querySelector(".selected").classList.remove("selected");
   this.classList.add("selected");
 
-  display(cities); //kalder på display() funktionen med cities som parameter
+  display(); //kalder på display() funktionen
 }
 
 function display() {
-  //kaldes når databasen er hentet
+  //kaldes når databasen er hentet eller når en filterknap klikkes
   const mainContent = document.getElementById("main_content");
   const template = document.querySelector("template").content;
   mainContent.textContent = ""; //fjerner sektionens indhold
