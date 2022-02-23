@@ -635,7 +635,8 @@ schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp ---*/
   z-index: 99; /* ingen overlap */
   border: none; 
   outline: none; 
-  background-color: hsl(4, 47%, 72%); 
+ background-color: hsl(4, 47%, 72%); 
+ opacity: 0.5;
   color: white; 
   cursor: pointer; /* mouse pointer on hover */
   padding: 10px; 
@@ -644,4 +645,11 @@ schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp ---*/
 
 #myBtn:hover {
   background-color: hsl(4, 47%, 67%); /* hover farveskift*/
+  opacity: 1;
+}
+/*fjerne opacity på tilbage til top knap*/
+@media (min-width: 800px) {
+  #myBtn{
+    opacity: 1;
+  }
 }
