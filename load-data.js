@@ -71,3 +71,26 @@ document.getElementById("close").addEventListener("click", () => (popUp.style.di
 function myFunction() {
   alert("Tak for din indsendelse");
 }
+/*-------denne kode er lånt af w3/ this code is from w3 schools website - schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp ---*/
+//tilbage til top knap
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
