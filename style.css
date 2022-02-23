@@ -558,7 +558,8 @@ footer #grid_container {
 }
 
 #close {
-  position: relative;
+  position: fixed;
+  left: 70%;
   padding: 4px 12px;
   font-size: 32px;
   font-weight: bolder;
