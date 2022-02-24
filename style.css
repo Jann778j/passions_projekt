@@ -349,6 +349,11 @@ article.card img {
   background-size: cover;
 }
 
+article.card:nth-child(5) img.card_img {
+  /* selectoren tager fat i billedet på det femte kort og flytter beskæringen, så højreside af billedet er synligt*/
+  object-position: 100% 50%;
+}
+
 article.card > * {
   grid-area: 1/1;
 }
@@ -364,7 +369,7 @@ article h4 {
 }
 
 article.card:hover h4.name {
-  padding: 58% 0.5rem;
+  padding: 60% 0.5rem;
   height: 100%;
 }
 
@@ -401,7 +406,7 @@ article.card:hover h4.name {
 
 /*-section navn-*/
 #kontakt_os {
-  background-color: rgb(140, 177, 192);
+  background-color: hsl(197, 29%, 65%);
   height: 800px;
   display: grid;
   place-content: center;
@@ -451,7 +456,7 @@ input {
 }
 /*-send knap-*/
 #send_knap {
-  background-color: rgb(217, 155, 150);
+  background-color: hsl(4, 47%, 72%);
   color: white;
   width: 80px;
   border: none;
@@ -459,7 +464,7 @@ input {
 }
 
 #send_knap:hover {
-  background-color: rgb(210, 137, 131);
+  background-color: hsl(4, 47%, 67%);
 }
 /*-web-*/
 @media (min-width: 600px) {
@@ -489,7 +494,7 @@ input {
 /* #region footer */
 
 footer {
-  background-color: rgb(89, 54, 63);
+  background-color: hsl(345, 24%, 28%);
   /*text-align: center;*/
 }
 footer p {
@@ -539,7 +544,7 @@ footer #grid_container {
   transition: transform 0.2s; /* Animation */
 }
 .zoom:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 /* #endregion footer */
 
@@ -562,7 +567,7 @@ footer #grid_container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: rgb(240, 237, 234);
+  background-color: hsl(30, 18%, 93%);
   box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.25);
   overflow-y: scroll;
   width: 90vw;
@@ -629,14 +634,14 @@ schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp ---*/
   bottom: 20px; /* knappen er placeret nederst */
   right: 30px; /* knappen er placeret til højre*/
   z-index: 99; /* ingen overlap */
-  border: none;
-  outline: none;
-  background-color: hsl(4, 47%, 72%);
-  opacity: 0.5;
-  color: white;
+  border: none; 
+  outline: none; 
+ background-color: hsl(4, 47%, 72%); 
+ opacity: 0.5;
+  color: white; 
   cursor: pointer; /* mouse pointer on hover */
-  padding: 10px;
-  font-size: 2rem;
+  padding: 10px; 
+  font-size: 2rem; 
 }
 
 #myBtn:hover {
@@ -645,7 +650,7 @@ schools https://www.w3schools.com/howto/howto_js_scroll_to_top.asp ---*/
 }
 /*fjerne opacity på tilbage til top knap*/
 @media (min-width: 1400px) {
-  #myBtn {
+  #myBtn{
     opacity: 1;
   }
 }
