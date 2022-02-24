@@ -296,7 +296,7 @@ section#splash article {
 
 /* #region about_us*/
 #about_us {
-  background-color: hsl(17, 58%, 88%);
+  background-color: rgb(242, 217, 207);
 }
 
 #about_us img {
@@ -406,7 +406,7 @@ article.card:hover h4.name {
 
 /*-section navn-*/
 #kontakt_os {
-  background-color: hsl(197, 29%, 65%);
+  background-color: rgb(140, 177, 192);
   height: 800px;
   display: grid;
   place-content: center;
@@ -456,7 +456,7 @@ input {
 }
 /*-send knap-*/
 #send_knap {
-  background-color: hsl(4, 47%, 72%);
+  background-color: rgb(217, 155, 150);
   color: white;
   width: 80px;
   border: none;
@@ -464,7 +464,7 @@ input {
 }
 
 #send_knap:hover {
-  background-color: hsl(4, 47%, 67%);
+  background-color: rgb(210, 137, 131);
 }
 /*-web-*/
 @media (min-width: 600px) {
@@ -494,7 +494,7 @@ input {
 /* #region footer */
 
 footer {
-  background-color: hsl(345, 24%, 28%);
+  background-color: rgb(89, 54, 63);
   /*text-align: center;*/
 }
 footer p {
@@ -544,7 +544,7 @@ footer #grid_container {
   transition: transform 0.2s; /* Animation */
 }
 .zoom:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 /* #endregion footer */
 
@@ -567,7 +567,7 @@ footer #grid_container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: hsl(30, 18%, 93%);
+  background-color: rgb(240, 237, 234);
   box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.25);
   overflow-y: scroll;
   width: 90vw;
